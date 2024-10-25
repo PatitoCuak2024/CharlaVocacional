@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calcula tu Índice de Masa Corporal (IMC)</h1>
+        <p>Tu IMC puede ser una medida inicial útil para identificar tu clasificación de peso y tus factores de riesgo
+            de obesidad.</p>
+
+        <!-- Añadimos los botones de selección de género -->
+        <div class="gender-selection">
+            <label>
+                <input type="radio" name="gender" value="male" id="male" checked onchange="updateGender()"> Varón
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female" id="female" onchange="updateGender()"> Mujer
+            </label>
+        </div>
+
+        <div class="inputs">
+            <div class="slider-container">
+                <label for="altura">TU ALTURA</label>
+                <input type="range" id="altura" min="100" max="220" value="000" oninput="updateAltura()">
+                <input type="number" id="alturaNumber" value="000" min="100" max="220"
+                    oninput="updateAlturaFromInput()">
+                <span>cm</span>
+            </div>
+
+            <div class="slider-container">
+                <label for="peso">TU PESO</label>
+                <input type="range" id="peso" min="30" max="150" value="00" oninput="updatePeso()">
+                <input type="number" id="pesoNumber" value="00" min="30" max="150" oninput="updatePesoFromInput()">
+                <span>kg</span>
+            </div>
+        </div>
+
+
+        
+        <div class="resultado">
+            <h2>TU IMC ES</h2>
+            <span id="imcResultado">00.0</span>
+            <span class="clasificacion-resultado" id="clasificacion"></span>
+        </div>
+
+        <div id="recomendaciones" class="recomendaciones" style="display: none;">
+            <h3>Recomendaciones</h3>
+            <p id="recomendacionTexto"></p>
+        </div>
+
+        <div>
+            <h3>Tu estado actual</h3>
+        </div>
+        
+
+        <!-- Imagen debajo del termómetro -->
+        <div class="imagen-container">
+            <img id="imagenIMC" src="ruta_de_la_imagen" alt="IMC Imagen">
+        </div>
+    </div>
+
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
