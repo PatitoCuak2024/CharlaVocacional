@@ -64,32 +64,32 @@ function clasificarIMC(imc) {
     if (imc < 18) {
         clasificacion = "Bajo peso";
         recomendacion = "¡No te preocupes! Con una alimentación balanceada y rica en nutrientes, puedes mejorar tu estado físico. Prueba incluir proteínas, carbohidratos y grasas saludables en tu dieta.";
-        imagenSrc = selectedGender === 'male' ? 'images/indice/Varon/bajo_peso.png' : 'images/indice/Mujer/bajo_peso.png';
+        imagenSrc = selectedGender === 'male' ? 'Images/indice/Varon/bajo_peso.png' : 'Images/indice/Mujer/bajo_peso.png';
         clasificacionResultadoDiv.style.backgroundColor = "#ffcccb";
     } else if (imc >= 18 && imc < 25) {
         clasificacion = "Peso normal";
         recomendacion = "¡Excelente! Estás en un buen camino. Sigue así con una alimentación equilibrada y actividades físicas que disfrutes para mantenerte saludable.";
-        imagenSrc = selectedGender === 'male' ? 'images/indice/Varon/peso_normal.png' : 'images/indice/Mujer/peso_normal.png';
+        imagenSrc = selectedGender === 'male' ? 'Images/indice/Varon/peso_normal.png' : 'Images/indice/Mujer/peso_normal.png';
         clasificacionResultadoDiv.style.backgroundColor = "#a4f1a1";
     } else if (imc >= 25 && imc < 30) {
         clasificacion = "Exceso de peso";
         recomendacion = "¡Estás a un paso de alcanzar tu mejor versión! Reduce los alimentos procesados y aumenta las comidas caseras llenas de verduras, proteínas magras, y grasas saludables. ¡Puedes lograrlo!";
-        imagenSrc = selectedGender === 'male' ? 'images/indice/Varon/exceso_peso.png' : 'images/indice/Mujer/exceso_peso.png';
+        imagenSrc = selectedGender === 'male' ? 'Images/indice/Varon/exceso_peso.png' : 'Images/indice/Mujer/exceso_peso.png';
         clasificacionResultadoDiv.style.backgroundColor = "#f8d86a";
     } else if (imc >= 30 && imc < 35) {
         clasificacion = "Obesidad Grado I";
         recomendacion = "Es momento de tomar decisiones importantes para tu salud. Un plan de nutrición balanceado junto con actividades físicas ligeras como caminar puede marcar la diferencia.";
-        imagenSrc = selectedGender === 'male' ? 'images/indice/Varon/obesidad_grado_1.png' : 'images/indice/Mujer/obesidad_grado_1.png';
+        imagenSrc = selectedGender === 'male' ? 'Images/indice/Varon/obesidad_grado_1.png' : 'Images/indice/Mujer/obesidad_grado_1.png';
         clasificacionResultadoDiv.style.backgroundColor = "#f39c12";
     } else if (imc >= 35 && imc < 40) {
         clasificacion = "Obesidad Grado II";
         recomendacion = "Tu salud es lo primero. Es hora de realizar cambios significativos, consulta a un nutricionista y comienza con ejercicios de bajo impacto para mejorar tu bienestar.";
-        imagenSrc = selectedGender === 'male' ? 'images/indice/Varon/obesidad_grado_2.png' : 'images/indice/Mujer/obesidad_grado_2.png';
+        imagenSrc = selectedGender === 'male' ? 'Images/indice/Varon/obesidad_grado_2.png' : 'Images/indice/Mujer/obesidad_grado_2.png';
         clasificacionResultadoDiv.style.backgroundColor = "#e74c3c";
     } else {
         clasificacion = "Obesidad Grado III";
         recomendacion = "¡No estás solo en esto! Es importante buscar ayuda profesional para recibir orientación adecuada y personal. Pequeños pasos pueden llevarte muy lejos.";
-        imagenSrc = selectedGender === 'male' ? 'images/indice/Varon/obesidad_grado_3.png' : 'images/indice/Mujer/obesidad_grado_3.png';
+        imagenSrc = selectedGender === 'male' ? 'Images/indice/Varon/obesidad_grado_3.png' : 'Images/indice/Mujer/obesidad_grado_3.png';
         clasificacionResultadoDiv.style.backgroundColor = "#d32714";
     }
 
